@@ -94,7 +94,7 @@ class Search extends  React.Component {
 											<ul className="card" key={result.show.id}>
 											    <li>
 											    	<img src={result.show.image.medium} align="left" alt="{ result.show.name }" />
-											    	<div class="blurb">
+											    	<div className="blurb">
 											    		<h2>{ result.show.name }</h2>
 											    		<div dangerouslySetInnerHTML={{ __html: result.show.summary }}></div>
 											    		<button type="button" className="btn btn-dark">Show Episodes</button>
