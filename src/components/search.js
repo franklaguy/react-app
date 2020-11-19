@@ -88,12 +88,12 @@ class Search extends  React.Component {
 					return (
 						<div className="results-container">
 							{ results.map( result => {
-									if(shows.includes(result.show.name)){
+									if(shows.includes(result.show.name) && result.show.image !== null){
 
 										return (
 											<ul className="card" key={result.show.id}>
 											    <li>
-											    	<img src={result.show.image.medium} align="left" alt="{ result.show.name }" />
+											    	<img src={ result.show.image.medium } align="left" alt="1212" />
 											    	<div className="blurb">
 											    		<h2>{ result.show.name }</h2>
 											    		<div dangerouslySetInnerHTML={{ __html: result.show.summary }}></div>
