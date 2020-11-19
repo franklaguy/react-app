@@ -9,6 +9,7 @@ function App() {
       </header>
       <div className="container-fluid content m-3">
         <Search />
+        <div className="pt-3 pb-3"></div>
       </div>
     </div>
   );
