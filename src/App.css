@@ -1,10 +1,9 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li {
+  list-style: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +13,72 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 97%, rgba(34,11,116,1) 100%);
+  min-height: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.content {
+  background-color: #fff;
+  width: 97%;
+}
+
+.search {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.search button, .search input {
+  background-color: #ebecf0;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.rotate {
+  transform: rotate(-50deg);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+button.btn-dark {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 97%, rgba(34,11,116,1) 100%);
+  border: none;
+}
+
+.card {
+  background-color: #ebecf0;
+  border: none;
+  width: 80%;
+  padding: 2rem;
+  margin: 3rem auto;
+  position: relative;
+}
+
+.card li {
+  min-height: 13rem;
+}
+
+.card li img {
+  position: absolute;
+  top: -1rem;
+  border-radius: .5rem;
+}
+.card li .blurb {
+  width: 70%;
+  margin-left: 15rem;
 }
 
 @keyframes App-logo-spin {
